@@ -4,8 +4,8 @@
     --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
 }
 html {
-    scroll-behavior: smooth;   /* biar scroll halus */
-    scroll-padding-top: 60px;  /* tinggi navbar Bos (60px di CSS) */
+    scroll-behavior: smooth;  
+    scroll-padding-top: 60px;  
     font-size: 90%;
 }
 
@@ -29,7 +29,7 @@ body {
         url(FotoRefor/Bacground1.png);
     background-size: cover;
     background-position: center;
-    z-index: -1;   /* ⬅ biar di bawah konten */
+    z-index: -1;   
     filter: blur(2.8px);
 }
 
@@ -37,12 +37,12 @@ body {
     position: relative;
     min-height: 100vh;
     background-color: var(--bg);
-    z-index: 1; /* ⬅ pastikan konten hero ada di atas */
+    z-index: 1; 
 }
 
 .hero main {
     position: relative;
-    z-index: 2; /* ⬅ isi (tulisan, button) dijamin tampil di atas background */
+    z-index: 2; 
 }
 
 .hero h2 {
@@ -117,6 +117,10 @@ body {
 .navbar-toggler {
   border-color: white;
 }
+
+.navbar .dropdown-item{
+
+}
 .navbar-toggler-icon {
   filter: invert(29%) sepia(93%) saturate(7489%) hue-rotate(357deg) brightness(98%) contrast(110%);
 }
@@ -131,7 +135,7 @@ body {
     background-size: cover;
     fill-opacity: calc(100px);
     background-position: center; 
-    min-height: 145vh;
+    min-height: 155vh;
     margin-top: 0; 
     padding-top: 5rem; 
     background-color: rgba(0, 0, 0, );
@@ -151,7 +155,7 @@ body {
 .home h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #f9f9f9;
     margin: 20px;
     margin-top: 20px;
@@ -160,14 +164,14 @@ body {
   .home h5{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #f9f9f9;
     text-align: center;
     margin: 20px;
     margin-top: -10px;
   }
   .home h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     color: aliceblue;
@@ -179,10 +183,10 @@ body {
 
 .circle-tile {
   aspect-ratio: 1 / 1;        
-  width: 200px;
-  border-radius: 80%;        
+  width: clamp(150px, 20vw, 300px); 
+  border-radius: 70%;        
   border: 1px;
-  background-color: #f80d0d;
+  background-color: #c71d1d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,69 +201,64 @@ body {
 
 .circle-tile img {
   width: 80%;
-  height: auto;
-  border-radius: 10%;
-  margin-bottom: 9px;
-  margin-top: -15px;
-  color: rgb(144, 29, 29);
+  height: auto
 }
 
 /* BUTTA */
 .circle-tile .ikon-butta {
-  width: 95%;
-  margin-top: -18px;
-  margin-right: -5px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top: -20px;
 }
 .circle-tile .teks-butta{
-  font-size: 1rem;
-  margin-top: -45px;
+  font-size: 0.90rem;
   color: black;
   text-align: center;
 }
 
 /* PADUPA */
 .circle-tile .Padupa {
-  width: 90%;
-  margin-top: -45px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: -32px;
 }
 .circle-tile .tari-padupa{
-  font-size: 1.2rem;
-  margin-top: -30px;
+  font-size: 1rem;
   color: black;
   text-align: center;
 }
 
 /* PEPE PEPE */
 .circle-tile .ikon-pepek {
-  width: 90%;
-  margin-top: -30px;
-  margin-right: 20px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: -32px;
 }
 .circle-tile .teks-pepe{
-  font-size: 1.15rem;
-  margin-top: -45px;
+  font-size: 1rem;
   color: black;
   text-align: center;
 }
 .circle-tile .makka{
-  font-size: 1.15rem;
-  margin-top: -45px;
+  font-size: 1rem;
   color: black;
   text-align: center;
-  padding-top: 39px;
+  padding-top: -8px;
 }
 
 /* PUISI */
 .circle-tile .ikon-puisi {
-  width: 90%;
-  margin-top: -40px;
+  width: 80%;
+  margin-top: -45px;
   margin-right: 22px;
 
 }
 .circle-tile .teks-puisi{
-  font-size: 1.5rem;
-  margin-top: -45px;
-  filter: brightness(0) !important;
+  font-size: 1.3rem;
+  margin-top: -10px;
   color: black;
   text-align: center;
 }
@@ -272,9 +271,8 @@ body {
 
 }
 .circle-tile .teks-band{
-  font-size: 1.3rem;
-  margin-top: -1px;
-  filter: brightness(0) !important;
+  font-size: 1.1rem;
+  margin-top: 4px;
   color: black;
   text-align: center;
 }
@@ -305,26 +303,26 @@ body {
 
 /* TEATER */
 .circle-tile .ikon-teater {
-  width: 95%;
+  width: 85%;
   margin-top: -30px;
   margin-right: 2px;
 }
 .circle-tile .teks-teater{
   font-size: 1.4rem;
-  margin-top: -40px;
+  margin-top: -20px;
   color: black;
   text-align: center;
 }
 
 /* PRESENTASI KARYA */
 .circle-tile .ikon-pk {
-  width: 95%;
+  width: 90%;
   margin-top: -30px;
   margin-right: 2px;
 }
 .circle-tile .teks-pk{
-  font-size: 1.4rem;
-  margin-top: -20px;
+  font-size: 1.2rem;
+  margin-top: -10px;
   color: black;
   text-align: center;
   line-height: 20px;
@@ -336,7 +334,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.4px;
-  word-wrap: break-word;     /* pecah kata jika terlalu panjang */
+  word-wrap: break-word;     
   margin-top: -20px;
   text-align: center;
 }
