@@ -72,12 +72,12 @@
             <li><a class="dropdown-item" href="#">Galery</a></li>
           </ul>
         </li> -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sosmed AKT24
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.instagram.com/informatics24._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/informatics24._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h2>instagram</h2></a></li> -->
             <!-- <li><a class="dropdown-item" href="#">Moment Kepanitian</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Galery</a></li> -->
@@ -105,8 +105,10 @@
       <!-- Item 1 Tari Butta Kalassukangku-->
       <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center">
         <div class="circle-tile" data-bs-toggle="modal" data-bs-target="#modalButtaKallassang">
+          
           <img class="ikon-butta" src="Ikon/Penari.png" alt="Tari Butta Kallassang">
           <h2 class="teks-butta">Tari Butta <p>Kalassukangku</p></h2>
+          
           <a class="stretched-link"></a>
         </div>
       </div>
@@ -186,8 +188,6 @@
   </div>
 </section>
 
-
-<!-- Modal: Tari Butta Kallassang -->
 <!-- Modal 1 -->
 <div class="modal fade " id="modalButtaKallassang" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -369,10 +369,10 @@
         minutes: 0, // Target minute [0-59], default: 0
         seconds: 0, // Target second [0-59], default: 0
         words: { // Custom labels, with lambda for plurals
-            days: { root: 'Hari', lambda: (root, n) => n > 1 ? root + 's' : root },
-            hours: { root: 'Jam', lambda: (root, n) => n > 1 ? root + 's' : root },
-            minutes: { root: 'Menit', lambda: (root, n) => n > 1 ? root + 's' : root },
-            seconds: { root: 'Detik', lambda: (root, n) => n > 1 ? root + 's' : root }
+            days: { root: 'Day', lambda: (root, n) => n > 1 ? root + 's' : root },
+            hours: { root: 'Hours', lambda: (root, n) => n > 1 ? root + 's' : root },
+            minutes: { root: 'Minutes', lambda: (root, n) => n > 1 ? root + 's' : root },
+            seconds: { root: 'Seconds', lambda: (root, n) => n > 1 ? root + 's' : root }
         },
         
 });
@@ -380,30 +380,19 @@
 
     <script>
   let scrollTop, scrollLeft;
-
-  // Fungsi untuk menonaktifkan scroll
   function disableScroll() {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
     window.onscroll = function () {
       window.scrollTo(scrollTop, scrollLeft);
     };
-
-    // Matikan smooth scroll supaya tidak error
     document.documentElement.style.scrollBehavior = 'auto';
   }
-
-  // Fungsi untuk mengaktifkan scroll kembali
   function enableScroll() {
     window.onscroll = null; 
     document.documentElement.style.scrollBehavior = 'smooth'; 
   }
-
-  // Jalankan disable scroll saat pertama kali masuk
   disableScroll();
-
-  // Saat tombol diklik → aktifkan scroll
   document.getElementById("btn-undangan").addEventListener("click", function (e) {
     enableScroll();
   });
