@@ -350,8 +350,10 @@
                 seconds: { root: 'Seconds', lambda: (root, n) => n > 1 ? root + 's' : root }
             },
         });
+        </script>
 
-        // Scroll control functions
+// Scroll control functions
+        <script>
         let scrollTop, scrollLeft;
         
         function disableScroll() {
@@ -373,5 +375,6 @@
             enableScroll();
         });
     </script>
+    
 </body>
 </html>
