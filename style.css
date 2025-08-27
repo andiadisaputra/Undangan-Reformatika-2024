@@ -101,33 +101,30 @@ body {
     justify-content: space-between; 
     z-index: 9999;   
 }
-
 .navbar-collapse.show {
-    background-color: rgba(0, 0, 0, 0.6); 
-    margin-top: 17px;
-}
+  background-color: rgba(0, 0, 0, 0.6); 
+  margin-top: 17px;
 
-.nav-link {
-    color: white;
-    transition: 0.3s;
 }
-
+.nav-link{
+  color: white;
+  transition: 0.3s;
+}
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar .nav-link.active {
-    color: red; 
+  color: red; 
 }
-
 .navbar-toggler {
-    border-color: white;
+  border-color: white;
 }
 
 .navbar-toggler-icon {
-    filter: invert(29%) sepia(93%) saturate(7489%) hue-rotate(357deg) brightness(98%) contrast(110%);
+  filter: invert(29%) sepia(93%) saturate(7489%) hue-rotate(357deg) brightness(98%) contrast(110%);
 }
 
-.navbar-brand {
-    color: red;
+.navbar-brand{
+  color: red;
 }
 
 /* ==================== HOME SECTION ==================== */
