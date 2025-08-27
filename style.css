@@ -1,8 +1,9 @@
 :root {
     --red: rgb(255, 0, 0);
     --bg: black;
-    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
+
 html {
     scroll-behavior: smooth;  
     scroll-padding-top: 60px;  
@@ -14,9 +15,9 @@ body {
     font-family: "Carter One", system-ui;
     min-height: 500px;
     background-color: #000000;
-
 }
 
+/* ==================== HERO SECTION ==================== */
 .hero::before {
     content: '';
     position: absolute;
@@ -51,7 +52,6 @@ body {
     color: rgb(255, 255, 255);
     margin-top: 40px;
     box-shadow: var(--shadow);
-    
 }
 
 .hero h3 {
@@ -86,6 +86,7 @@ body {
     font-size: 1.4rem;
 } 
 
+/* ==================== NAVIGATION ==================== */
 .mynavbar {
     background-color: rgba(79, 71, 71, 0.6) !important;
     transition: background-color 0.3s ease;
@@ -100,33 +101,36 @@ body {
     justify-content: space-between; 
     z-index: 9999;   
 }
-.navbar-collapse.show {
-  background-color: rgba(0, 0, 0, 0.6); 
-  margin-top: 17px;
 
+.navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.6); 
+    margin-top: 17px;
 }
-.nav-link{
-  color: white;
-  transition: 0.3s;
+
+.nav-link {
+    color: white;
+    transition: 0.3s;
 }
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar .nav-link.active {
-  color: red; 
+    color: red; 
 }
+
 .navbar-toggler {
-  border-color: white;
+    border-color: white;
 }
 
 .navbar-toggler-icon {
-  filter: invert(29%) sepia(93%) saturate(7489%) hue-rotate(357deg) brightness(98%) contrast(110%);
+    filter: invert(29%) sepia(93%) saturate(7489%) hue-rotate(357deg) brightness(98%) contrast(110%);
 }
 
-.navbar-brand{
-  color: red;
+.navbar-brand {
+    color: red;
 }
 
-
+/* ==================== HOME SECTION ==================== */
 .home {
     background-color: black;
     background-size: cover;
@@ -135,20 +139,20 @@ body {
     min-height: 155vh;
     margin-top: 0; 
     padding-top: 5rem; 
-    background-color: rgba(0, 0, 0, );
+    background-color: rgba(0, 0, 0);
 }
-
 
 .home h2 {
     font-family: "Carter One", system-ui;
     font-style: oblique;
     margin-top: -30px;
     font-size: 2rem;
-    line-height: 2,2rem;
+    line-height: 2.2rem;
     color: #f9f9f9;
     word-spacing: 10px;
     letter-spacing: 3px;
 }
+
 .home h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -156,9 +160,9 @@ body {
     color: #f9f9f9;
     margin: 20px;
     margin-top: 20px;
-  }
-  
-  .home h5{
+}
+
+.home h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -166,8 +170,9 @@ body {
     text-align: center;
     margin: 20px;
     margin-top: -10px;
-  }
-  .home h4 {
+}
+
+.home h4 {
     font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -175,289 +180,139 @@ body {
     font-weight: bold;
     margin-top: 25px;
     margin: 15px;
-  }
+}
 
-
+/* ==================== CIRCLE TILES ==================== */
 .circle-tile {
-  aspect-ratio: 1 / 1;
-  width: clamp(150px, 22vw, 240px);
-  border-radius: 50%;
-  background-color: #c71d1d;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(255,255,255,0.8);
-  transition: transform 0.2s ease;
-  margin: 15px;
-  position: relative;
-}
-
-.circle-tile img {
-  width: 70%;  
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
-/* BUTTA */
-.circle-tile .ikon-butta {
-  width: 80%;
-  height: auto;
-  margin-bottom: 5px;
-  margin-top: -20px;
-}
-.circle-tile .teks-butta{
-  font-size: 0.90rem;
-  color: black;
-  text-align: center;
-}
-
-/* PADUPA */
-.circle-tile .Padupa {
-  width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-  margin-top: -32px;
-}
-.circle-tile .tari-padupa{
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-}
-
-/* PEPE PEPE */
-.circle-tile .ikon-pepek {
-  width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-  margin-top: -32px;
-}
-.circle-tile .teks-pepe{
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-  margin-left: 10px;
-}
-.circle-tile .makka{
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-  padding-top: -8px;
-}
-
-/* PUISI */
-.circle-tile .ikon-puisi {
-  width: 95%;
-  margin-top: -30px;
-  margin-right: 10px;
-
-}
-.circle-tile .teks-puisi{
-  font-size: 1.3rem;
-  margin-top: -30px;
-  color: black;
-  text-align: center;
-}
-
-/* Band */
-.circle-tile .ikon-band {
-  width: 55%;
-  margin-top: -10px;
-  margin-right: 2px;
-
-}
-.circle-tile .teks-band{
-  font-size: 1.1rem;
-  margin-top: 4px;
-  color: black;
-  text-align: center;
-}
-/* Sitobo */
-.circle-tile .ikon-sitobo {
-  width: 95%;
-  margin-top: -50px;
-  margin-right: 2px;
-}
-.circle-tile .teks-sitobo{
-  font-size: 1.3rem;
-  margin-top: -20px;
-  color: black;
-  text-align: center;
-}
-/* ANGNGARU */
-.circle-tile .ikon-angngaru {
-  width: 95%;
-  margin-top: -30px;
-  margin-right: 2px;
-}
-.circle-tile .teks-angngaru{
-  font-size: 1.3rem;
-  margin-top: -40px;
-  color: black;
-  text-align: center;
-}
-
-/* TEATER */
-.circle-tile .ikon-teater {
-  width: 85%;
-  margin-top: -30px;
-  margin-right: 2px;
-}
-.circle-tile .teks-teater{
-  font-size: 1.4rem;
-  margin-top: -20px;
-  color: black;
-  text-align: center;
-}
-
-/* PRESENTASI KARYA */
-.circle-tile .ikon-pk {
-  width: 90%;
-  margin-top: -30px;
-  margin-right: 2px;
-}
-.circle-tile .teks-pk{
-  font-size: 1.2rem;
-  margin-top: -10px;
-  color: black;
-  text-align: center;
-  line-height: 20px;
-}
-
-
-
-.circle-tile .label {
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.4px;
-  word-wrap: break-word;     
-  margin-top: -20px;
-  text-align: center;
+    aspect-ratio: 1 / 1;
+    width: clamp(150px, 22vw, 240px);
+    border-radius: 50%;
+    background-color: #8e0c0ce2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.05rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 13px;
+    position: relative;
 }
 
 .circle-tile:hover {
-  transform: scale(1.20);
+    transform: scale(1.20);
+    background-color: #ff6b35; 
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
 }
 
-.jadwal{
-  background-color: var(--bg);
-  color: white;
-  padding: 4rem 1rem ;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
-  min-height: 800px;
+.circle-tile img {
+    width: 85%;  
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    filter: contrast(0.95) brightness(1.05);
+    transition: all 0.3s ease;
 }
 
-.jadwal h2{
-  color: red;
-  font-size: 2.5rem;
-  margin-top: -80px;
+.circle-tile:hover img {
+    filter: contrast(1) brightness(1) drop-shadow(0 0 5px rgba(255,255,255,0.3));
+    transform: scale(1.02);
 }
 
+/* Individual icon adjustments */
+.circle-tile .ikon-butta {
+    width: 97%;
+}
+
+.circle-tile .Padupa {
+    width: 95%;
+}
+
+.circle-tile .ikon-pepek {
+    width: 99%;
+}
+
+.circle-tile .ikon-puisi {
+    width: 92%;
+}
+
+.circle-tile .ikon-band {
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+.circle-tile .ikon-sitobo {
+    width: 90%;
+    margin-top: -15px;
+}
+
+.circle-tile .ikon-teater {
+    width: 99%;
+}
+
+.circle-tile .ikon-pk {
+    width: 90%;
+}
+
+.circle-tile .label {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4px;
+    word-wrap: break-word;     
+    margin-top: -20px;
+    text-align: center;
+}
+
+/* ==================== SCHEDULE SECTION ==================== */
+.jadwal {
+    background-color: var(--bg);
+    color: white;
+    padding: 4rem 1rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    min-height: 800px;
+}
+
+.jadwal h2 {
+    color: red;
+    font-size: 2.5rem;
+    margin-top: -80px;
+}
 
 .jadwal .alamat {
-  font-size: 1.30rem;
-  font-family: "Carter One", system-ui;
+    font-size: 1.30rem;
+    font-family: "Carter One", system-ui;
 }
 
-.jadwal .description{
-  font-size: 1.3rem;
-  font-weight: 400;
+.jadwal .description {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
-
 
 .jadwal .card {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
-  border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid white;
 }
 
 .jadwal .card-footer {
-  
-  border: 1px solid white;
-  color: white !important;
+    border: 1px solid white;
+    color: white !important;
 }
 
-.jadwal .card-header{
-  color: red;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-display:var(--shadow);
-  border: 1px solid white;
+.jadwal .card-header {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-display: var(--shadow);
+    border: 1px solid white;
 }
 
-.jadwal .card-body{
-  font-size: 1rem;
-  margin: 15px;
+.jadwal .card-body {
+    font-size: 1rem;
+    margin: 15px;
 }
-
-
-
-
-/* 
-/* ==================== MEDIA QUERY ==================== */
-
-/* 📲 Tablet (≥ 576px) *
-@media (min-width: 576px) {
-  html {
-    font-size: 95%;
-  }
-  .home {
-    padding: 2rem 1rem;
-  }
-  .circle-tile {
-    width: clamp(120px, 20vw, 180px);
-  }
-  .jadwal {
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-  }
-}
-
-/* 💻 Laptop sedang (≥ 768px) *
-@media (min-width: 768px) {
-  html {
-    font-size: 100%;
-  }
-  .home {
-    padding: 4rem 3rem;
-  }
-  .circle-tile {
-    width: clamp(150px, 18vw, 200px);
-  }
-  .jadwal {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-  }
-}
-
-/* 🖥️ Laptop besar / Desktop (≥ 992px) *
-@media (min-width: 992px) {
-  html {
-    font-size: 105%;
-  }
-  .home h2 { font-size: clamp(2rem, 3vw, 2.5rem); }
-  .home h3 { font-size: clamp(1rem, 2vw, 1.5rem); }
-  .home h4 { font-size: clamp(1rem, 2vw, 1.5rem); }
-
-  .circle-tile {
-    width: clamp(180px, 15vw, 220px);
-  }
-}
-
-/* 🖥️💡 Extra large (≥ 1200px) *
-@media (min-width: 1200px) {
-  html {
-    font-size: 110%;
-  }
-  .home h2 { font-size: clamp(2.2rem, 2.5vw, 3rem); }
-  .home h3 { font-size: clamp(1.6rem, 2vw, 2rem); }
-  .home h4 { font-size: clamp(1.4rem, 1.8vw, 2rem); }
-
-  .circle-tile {
-    width: clamp(200px, 12vw, 250px);
-  }
-}
-
 
