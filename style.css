@@ -1,7 +1,7 @@
 :root {
     --red: rgb(255, 0, 0);
     --bg: black;
-    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+    /* --shadow: 0 2px 2px rgb(0 0 0 / 0.5); */
 }
 
 html {
@@ -196,13 +196,13 @@ body {
 }
 
 .circle-tile:hover {
-    transform: scale(1.20);
+    transform: scale(1.10);
     background-color: #ff6b35; 
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
 }
 
 .circle-tile img {
-    width: 85%;  
+    width: 82%;  
     height: auto;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
@@ -221,37 +221,37 @@ body {
 
 /* Individual icon adjustments */
 .circle-tile .ikon-butta {
-    width: 97%;
+    width: 91%;
 }
 
 .circle-tile .Padupa {
-    width: 95%;
+    width: 91%;
 }
 
 .circle-tile .ikon-pepek {
-    width: 99%;
+    width: 95%;
 }
 
 .circle-tile .ikon-puisi {
-    width: 92%;
+    width: 85%;
 }
 
 .circle-tile .ikon-band {
-    width: 93%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
 .circle-tile .ikon-sitobo {
-    width: 90%;
+    width: 85%;
     margin-top: -15px;
 }
 
 .circle-tile .ikon-teater {
-    width: 99%;
+    width: 95%;
 }
 
 .circle-tile .ikon-pk {
-    width: 90%;
+    width: 85%;
 }
 
 .circle-tile .label {
