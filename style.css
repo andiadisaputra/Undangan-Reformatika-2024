@@ -151,8 +151,7 @@ body {
 }
 
 .home h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-family: "Carter One", system-ui;
     font-size: 1.2rem;
     color: #f9f9f9;
     margin: 20px;
@@ -160,8 +159,7 @@ body {
 }
 
 .home h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-family: "Carter One", system-ui;
     font-size: 1.2rem;
     color: #f9f9f9;
     text-align: center;
@@ -171,10 +169,9 @@ body {
 
 .home h4 {
     font-size: 1.3rem;
-    font-family: "Montserrat", sans-serif;
+   font-family: "Carter One", system-ui;
     text-align: center;
     color: aliceblue;
-    font-weight: bold;
     margin-top: 25px;
     margin: 15px;
 }
